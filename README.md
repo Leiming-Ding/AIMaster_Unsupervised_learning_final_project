@@ -36,7 +36,12 @@ Model architecture: I tried different models in this project. First, I tried sup
 - Using hierarchical clustering, From the results, 4 clusters seemed to be the most appropriate based on silhouette score. Cluster 0 are different from cluster 2 in terms of mastery-approach goal, performance-approach goal, performance-avoidance goal, and self-efficacy. Cluster 0 are different from cluster 1 and cluster 3 in terms of effort cost, opportunity cost, and psychological costs. There were no differences in terms of exam1 score and final score among different clusters.
 ---
 
-Learning and takeaways: (1) For supervised learning, linear regression and decision trees are the simple models with high interpretability. Random forest, XGBoost, SVM, and neural models are becoming more complex but with low interpretability. In this analysis, I tried different models to predict the exam1 score and final score, simpler models, such as linear regression and decision trees, actually performed a better performance with lower RMSE and higher R^^2; (2) in psychology, due to the data generation because evenly distributed items, there is less nonlinear relationship. Maybe this is one reason why using simpler models works; (3) for unsupervised learning, I tried k-means clustering, GMM clustering, and hierarchical clustering. The number of clusters is chosen by the analysers. Although the number of clusters based on values of each variable theoretically make sense, there are no differences detected among different clusters.
+Learning and takeaways: 
+- (1) For supervised learning, linear regression and decision trees are the simple models with high interpretability. Random forest, XGBoost, SVM, and neural models are becoming more complex but with low interpretability. In this analysis, I tried different models to predict the exam1 score and final score, simpler models, such as linear regression and decision trees, actually performed a better performance with lower RMSE and higher R^^2;
+- (2) in psychology, due to the data generation because evenly distributed items, there is less nonlinear relationship. Maybe this is one reason why using simpler models works;
+- (3) for unsupervised learning, I tried k-means clustering, GMM clustering, and hierarchical clustering. The number of clusters is chosen by the analysers. Although the number of clusters based on values of each variable theoretically make sense, there are no differences detected among different clusters.
+
+Ways to improve: (1) for supervised learning models, look at the feature importance; (2) for unsupervised learning models, check the number of participants in each cluster to see whether a small cluster can be combined into another cluster.
 
 
 
